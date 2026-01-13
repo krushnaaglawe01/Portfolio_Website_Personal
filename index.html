@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krushna | Frontend Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <h1>Krushna</h1>
+  <nav id="nav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="toggle" onclick="toggleTheme()">Dark / Light</div>
+</header>
+
+<section id="about" class="hero reveal">
+  <div class="hero-text">
+
+    <p id="h1">Hi, <br>I’m Krushna Aglawe, </p>
+    <p>
+      A Frontend Developer. I specialize in building
+      responsive and user-friendly web interfaces using HTML, CSS, JavaScript, and React.
+    </p><br>
+
+    <p>
+      I enjoy working on real-world projects, handling DOM manipulation, form validation,
+      and creating clean, modern UI designs. I focus on writing structured, maintainable
+      code and continuously improving my frontend skills.
+    </p><br>
+
+    <p>
+      I am a quick learner and always excited to explore new technologies.
+      Currently, I am looking for a frontend developer opportunity
+      where I can apply my skills, learn from experienced developers, and grow in my career.
+    </p><br><br>
+
+    <a href="Krushna Aglawe Resume.pdf.pdf" class="btn" download>Download CV</a>
+  </div>
+
+  <div class="hero-img">
+    <img src="profilepic2.png" alt="Krushna Aglave">
+  </div>
+</section>
+
+<section id="skills" class="reveal" class="active">
+  <h2 class="section-title">My Skills</h2>
+
+  <div class="skills-grid">
+    <div class="skill-box html">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+      <p>HTML</p>
+    </div>
+
+    <div class="skill-box css">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+      <p>CSS</p>
+    </div>
+
+    <div class="skill-box js">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+      <p>JavaScript</p>
+    </div>
+
+    <div class="skill-box bootstrap">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg">
+      <p>Bootstrap</p>
+    </div>
+
+    <div class="skill-box react">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+      <p>React JS</p>
+    </div>
+
+    <div class="skill-box github">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+      <p>GitHub</p>
+    </div>
+
+    <div class="skill-box c">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg">
+      <p>C</p>
+    </div>
+
+    <div class="skill-box cpp">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">
+      <p>C++</p>
+    </div>
+
+    <div class="skill-box java">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+      <p>Java</p>
+    </div>
+
+    <div class="skill-box sql">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+      <p>MySQL</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="project">
+      <h3>Weather App</h3>
+      <p>Real-time weather application using API.</p>
+      <a href="#">GitHub</a>
+      <a href="#">Live Demo</a>
+    </div>
+    <div class="project">
+      <h3>Smart Expense Tracker</h3>
+      <p>Expense management with category-wise tracking.</p>
+      <a href="#">GitHub</a>
+      <a href="#">Live Demo</a>
+    </div>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>Responsive personal portfolio website.</p>
+      <a href="#">GitHub</a>
+      <a href="http://127.0.0.1:5500/Index.html">Live Demo</a>
+    </div>
+  </div>
+</section>
+
+<h2 id="contact">Contact</h2>
+
+<form name="contact" method="POST" data-netlify="true" netlify>
+  <input type="hidden" name="form-name" value="contact">
+
+  <input type="text" name="name" placeholder="Your Name" required>
+
+  <input type="email" name="email" placeholder="Your Email" required>
+
+  <textarea name="message" placeholder="Your Message" required></textarea>
+
+  <button type="submit">Send Message</button>
+</form>
+
+<footer>© 2026 Krish | Frontend Developer</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
