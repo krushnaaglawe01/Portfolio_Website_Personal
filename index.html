@@ -3,148 +3,266 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Krushna | Frontend Developer</title>
+  <title>Krushna Aglawe — Full Stack Developer</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-<header>
-  <h1>Krushna</h1>
-  <nav id="nav">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <div class="toggle" onclick="toggleTheme()">Dark / Light</div>
-</header>
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">KA.</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
 
-<section id="about" class="hero reveal">
-  <div class="hero-text">
-
-    <p id="h1">Hi, <br>I’m Krushna Aglawe, </p>
-    <p>
-      A Frontend Developer. I specialize in building
-      responsive and user-friendly web interfaces using HTML, CSS, JavaScript, and React.
-    </p><br>
-
-    <p>
-      I enjoy working on real-world projects, handling DOM manipulation, form validation,
-      and creating clean, modern UI designs. I focus on writing structured, maintainable
-      code and continuously improving my frontend skills.
-    </p><br>
-
-    <p>
-      I am a quick learner and always excited to explore new technologies.
-      Currently, I am looking for a frontend developer opportunity
-      where I can apply my skills, learn from experienced developers, and grow in my career.
-    </p><br><br>
-
-    <a href="Krushna Aglawe Resume.pdf.pdf" class="btn" download>Download CV</a>
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-glow"></div>
+  <div style="position:relative; z-index:1;">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Available for opportunities
+    </div>
+    <h1>
+      Hi, I'm <span>Krushna</span><br/>Full Stack Developer
+    </h1>
+    <p class="hero-sub">
+      I build complete web applications — from REST APIs and databases to 
+      responsive React frontends — and deploy them to production.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        View My Work
+      </a>
+      <a href="#contact" class="btn-outline">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+        Get In Touch
+      </a>
+    </div>
   </div>
+</div>
 
-  <div class="hero-img">
-    <img src="profilepic2.png" alt="Krushna Aglave">
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="reveal">
+    <p class="section-label">Who I Am</p>
+    <h2 class="section-title">About Me</h2>
+  </div>
+  <div class="about-grid reveal">
+    <div class="about-text">
+      <p>
+        I'm a Full Stack Developer with hands-on experience building and deploying 
+        production-ready web applications using <strong>React.js</strong>, 
+        <strong>Spring Boot</strong>, and <strong>PostgreSQL</strong>.
+      </p>
+      <p>
+        I enjoy working across the entire stack — designing REST APIs, managing 
+        databases, and crafting responsive UIs that users actually enjoy using.
+      </p>
+      <p>
+        I built <strong>NovaFlow</strong>, a complete SaaS project management app 
+        from scratch — JWT authentication, task management, real-time progress 
+        tracking, and full cloud deployment on Vercel and Render.
+      </p>
+      <div style="margin-top: 24px;">
+        <a href="Krushna Aglawe Resume.pdf.pdf" download class="btn-primary" style="display:inline-flex;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Resume
+        </a>
+      </div>
+    </div>
+    <div class="about-stats">
+      <div class="stat-card">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Projects Deployed</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">10+</div>
+        <div class="stat-label">REST APIs Built</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">5+</div>
+        <div class="stat-label">Tech Stack</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Self-Taught</div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="skills" class="reveal" class="active">
-  <h2 class="section-title">My Skills</h2>
+<div class="divider"></div>
 
+<!-- SKILLS -->
+<section id="skills">
+  <div class="reveal">
+    <p class="section-label">What I Know</p>
+    <h2 class="section-title">Skills & Technologies</h2>
+  </div>
   <div class="skills-grid">
-    <div class="skill-box html">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
-      <p>HTML</p>
+    <div class="skill-card reveal">
+      <div class="skill-card-label">Frontend</div>
+      <div class="skill-tags">
+        <span class="tag tag-blue">React.js</span>
+        <span class="tag tag-blue">TypeScript</span>
+        <span class="tag tag-blue">JavaScript (ES6+)</span>
+        <span class="tag tag-blue">HTML5</span>
+        <span class="tag tag-blue">CSS3</span>
+        <span class="tag tag-blue">Tailwind CSS</span>
+        <span class="tag tag-blue">Bootstrap</span>
+      </div>
     </div>
-
-    <div class="skill-box css">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
-      <p>CSS</p>
+    <div class="skill-card reveal">
+      <div class="skill-card-label">Backend</div>
+      <div class="skill-tags">
+        <span class="tag tag-purple">Spring Boot</span>
+        <span class="tag tag-purple">Java</span>
+        <span class="tag tag-purple">REST APIs</span>
+        <span class="tag tag-purple">JWT Auth</span>
+        <span class="tag tag-purple">C</span>
+      </div>
     </div>
-
-    <div class="skill-box js">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
-      <p>JavaScript</p>
+    <div class="skill-card reveal">
+      <div class="skill-card-label">Database</div>
+      <div class="skill-tags">
+        <span class="tag tag-green">PostgreSQL</span>
+        <span class="tag tag-green">MySQL</span>
+      </div>
     </div>
-
-    <div class="skill-box bootstrap">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg">
-      <p>Bootstrap</p>
-    </div>
-
-    <div class="skill-box react">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
-      <p>React JS</p>
-    </div>
-
-    <div class="skill-box github">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
-      <p>GitHub</p>
-    </div>
-
-    <div class="skill-box c">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg">
-      <p>C</p>
-    </div>
-
-    <div class="skill-box cpp">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">
-      <p>C++</p>
-    </div>
-
-    <div class="skill-box java">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
-      <p>Java</p>
-    </div>
-
-    <div class="skill-box sql">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
-      <p>MySQL</p>
+    <div class="skill-card reveal">
+      <div class="skill-card-label">Tools & Deployment</div>
+      <div class="skill-tags">
+        <span class="tag tag-amber">Git</span>
+        <span class="tag tag-amber">GitHub</span>
+        <span class="tag tag-amber">Vercel</span>
+        <span class="tag tag-amber">Render</span>
+        <span class="tag tag-amber">Docker</span>
+      </div>
     </div>
   </div>
 </section>
 
+<div class="divider"></div>
 
-<section id="projects" class="reveal">
-  <h2>Projects</h2>
-  <div class="projects">
-    <div class="project">
-      <h3>Weather App</h3>
-      <p>Real-time weather application using API.</p>
-      <a href="#">GitHub</a>
-      <a href="#">Live Demo</a>
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="reveal">
+    <p class="section-label">What I've Built</p>
+    <h2 class="section-title">Projects</h2>
+  </div>
+  <div class="projects-grid">
+
+    <!-- NovaFlow -->
+    <div class="project-card reveal">
+      <span class="featured-badge">★ Featured</span>
+      <div class="project-icon" style="background: rgba(124,58,237,0.15);">⚡</div>
+      <h3>NovaFlow</h3>
+      <p>
+        Full-stack SaaS project management app with JWT authentication, 
+        task management, auto progress calculation, and real-time dashboard. 
+        Deployed on Vercel + Render with cloud PostgreSQL.
+      </p>
+      <div class="project-stack">
+        <span class="tag tag-blue">React</span>
+        <span class="tag tag-blue">TypeScript</span>
+        <span class="tag tag-purple">Spring Boot</span>
+        <span class="tag tag-green">PostgreSQL</span>
+        <span class="tag tag-amber">Vercel</span>
+      </div>
+      <div class="project-links">
+        <a href="https://novaflow-git-main-krushna-s-projects3.vercel.app" target="_blank" class="project-link link-live">Live Demo ↗</a>
+        <a href="https://github.com/krushnaaglawe01/NovaFlow" target="_blank" class="project-link link-gh">GitHub</a>
+      </div>
     </div>
-    <div class="project">
-      <h3>Smart Expense Tracker</h3>
-      <p>Expense management with category-wise tracking.</p>
-      <a href="#">GitHub</a>
-      <a href="#">Live Demo</a>
+
+     <!-- CodePath -->
+    <div class="project-card reveal">
+      <div class="project-icon" style="background: rgba(16,185,129,0.15);">🎓</div>
+      <h3>CodePath</h3>
+      <p>
+        Full-stack coding education platform with structured courses, in-browser 
+        coding challenges, quiz system, XP leaderboard, certificates, and a full 
+        admin panel. Supports both student and admin roles.
+      </p>
+      <div class="project-stack">
+        <span class="tag tag-blue">Next.js</span>
+        <span class="tag tag-blue">TypeScript</span>
+        <span class="tag tag-green">PostgreSQL</span>
+        <span class="tag tag-green">Prisma</span>
+        <span class="tag tag-blue">Tailwind CSS</span>
+        <span class="tag tag-amber">Vercel</span>
+      <div class="project-links">
+        <a href="https://codepath-lilac.vercel.app" target="_blank" class="project-link link-live">Live Demo ↗</a>
+        <a href="https://github.com/krushnaaglawe01/codepath" target="_blank" class="project-link link-gh">GitHub</a>
+      </div>
     </div>
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>Responsive personal portfolio website.</p>
-      <a href="#">GitHub</a>
-      <a href="http://127.0.0.1:5500/Index.html">Live Demo</a>
+</div>
+    <!-- Portfolio -->
+    <div class="project-card reveal">
+      <div class="project-icon" style="background: rgba(37,99,235,0.15);">🌐</div>
+      <h3>Personal Portfolio</h3>
+      <p>
+        Responsive personal portfolio website with dark theme, smooth animations, 
+        and resume download. Built with plain HTML, CSS, and JavaScript.
+      </p>
+      <div class="project-stack">
+        <span class="tag tag-blue">HTML5</span>
+        <span class="tag tag-blue">CSS3</span>
+        <span class="tag tag-blue">JavaScript</span>
+        <span class="tag tag-amber">Netlify</span>
+      </div>
+      <div class="project-links">
+        <a href="https://krushna-portfolio-site.netlify.app" target="_blank" class="project-link link-live">Live Demo ↗</a>
+        <a href="https://github.com/krushnaaglawe01/Portfolio_Website_Personal" target="_blank" class="project-link link-gh">GitHub</a>
+      </div>
+    </div>
+
+  
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-box reveal">
+    <h2>Let's Work Together</h2>
+    <p>
+      I'm actively looking for entry-level full stack or Java developer roles. 
+      If you have an opportunity or just want to connect, reach out!
+    </p>
+    <div class="contact-links">
+      <a href="mailto:krushnaaglawe01@gmail.com" class="btn-primary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+        Email Me
+      </a>
+      <a href="https://github.com/krushnaaglawe01" target="_blank" class="btn-outline">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/krushna-aglawe05/" target="_blank" class="btn-outline">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
     </div>
   </div>
 </section>
 
-<h2 id="contact">Contact</h2>
-
-<form name="contact" method="POST" data-netlify="true" netlify>
-  <input type="hidden" name="form-name" value="contact">
-
-  <input type="text" name="name" placeholder="Your Name" required>
-
-  <input type="email" name="email" placeholder="Your Email" required>
-
-  <textarea name="message" placeholder="Your Message" required></textarea>
-
-  <button type="submit">Send Message</button>
-</form>
-
-<footer>© 2026 Krish | Frontend Developer</footer>
+<!-- FOOTER -->
+<footer>
+  <p>Designed & Built by <strong>Krushna Aglawe</strong> · Full Stack Developer · 2026</p>
+</footer>
 
 <script src="script.js"></script>
 </body>

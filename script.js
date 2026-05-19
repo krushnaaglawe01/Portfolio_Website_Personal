@@ -1,37 +1,17 @@
-document.addEventListener("DOMContentLoaded", () => {
+// Hamburger
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
-  window.toggleTheme = function () {
-    document.body.classList.toggle("light");
-  };
-
-  const reveals = document.querySelectorAll(".reveal");
-
-  window.addEventListener("scroll", () => {
-    reveals.forEach(section => {
-      const top = section.getBoundingClientRect().top;
-      if (top < window.innerHeight - 100) {
-        section.classList.add("active");
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        observer.unobserve(entry.target);
       }
     });
-  });
-
-  window.validateForm = function () {
-    let name = document.getElementById("name").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let msg = document.getElementById("message").value.trim();
-
-    if (name === "" || email === "" || msg === "") {
-      alert("All fields are required");
-      return false;
-    }
-
-    if (!email.includes("@")) {
-      alert("Enter a valid email");
-      return false;
-    }
-
-    alert("Message sent successfully!");
-    return false;
-  };
-
-});
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
