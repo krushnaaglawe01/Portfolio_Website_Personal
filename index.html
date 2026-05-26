@@ -1,386 +1,574 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Krushna Aglawe — Full Stack Developer</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krushna Aglawe — Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <a href="#" class="nav-logo">KA.</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#internships">Experience</a></li>
+        <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
 
-<!-- NAV -->
-<nav>
-  <a href="#" class="nav-logo">KA.</a>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact" class="nav-cta">Hire Me</a></li>
-  </ul>
-  <button class="hamburger" id="hamburger" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-
-<!-- HERO -->
-<div class="hero">
-  <div class="hero-glow"></div>
-  <div style="position:relative; z-index:1;">
-    <div class="hero-badge">
-      <span class="badge-dot"></span>
-      Available for opportunities
-    </div>
-    <h1>
-      Hi, I'm <span>Krushna</span><br/>Full Stack Developer
-    </h1>
-    <p class="hero-sub">
-      I build complete web applications — from REST APIs and databases to 
-      responsive React frontends — and deploy them to production.
-    </p>
-    <div class="hero-btns">
-      <a href="#projects" class="btn-primary">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-        View My Work
-      </a>
-      <a href="#contact" class="btn-outline">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
-        Get In Touch
-      </a>
-    </div>
-  </div>
-</div>
-
-<div class="divider"></div>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="reveal">
-    <p class="section-label">Who I Am</p>
-    <h2 class="section-title">About Me</h2>
-  </div>
-  <div class="about-grid reveal">
-    <div class="about-text">
-      <p>
-        I'm a passionate Full Stack Developer with a strong foundation in both 
-        frontend and backend technologies. I specialize in building complete, 
-        production-ready web applications from the ground up.
-      </p>
-      <p>
-        On the backend, I design scalable REST APIs using <strong>Spring Boot</strong> 
-        and <strong>Java</strong>, with secure <strong>JWT authentication</strong> 
-        and database management using <strong>PostgreSQL</strong> and <strong>MySQL</strong>.
-      </p>
-      <p>
-        On the frontend, I craft responsive, user-friendly interfaces using 
-        <strong>React.js</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong> 
-        — and I take projects all the way to live deployment on cloud platforms.
-      </p>
-      <div style="margin-top: 24px;">
-        <a href="Krushna_Aglawe_Resume_.pdf" download class="btn-primary" style="display:inline-flex;">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Download Resume
-        </a>
-      </div>
-    </div>
-    <div class="about-stats">
-      <div class="stat-card">
-        <div class="stat-num">4+</div>
-        <div class="stat-label">Projects Deployed</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">10+</div>
-        <div class="stat-label">REST APIs Built</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">10+</div>
-        <div class="stat-label">Tech Stack</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">100%</div>
-        <div class="stat-label">Self-Taught</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- SKILLS -->
-<section id="skills">
-  <div class="reveal">
-    <p class="section-label">What I Know</p>
-    <h2 class="section-title">Skills & Technologies</h2>
-  </div>
-  <div class="skills-grid">
-    <div class="skill-card reveal">
-      <div class="skill-card-label">Frontend</div>
-      <div class="skill-tags">
-        <span class="tag tag-blue">React.js</span>
-        <span class="tag tag-blue">TypeScript</span>
-        <span class="tag tag-blue">JavaScript (ES6+)</span>
-        <span class="tag tag-blue">HTML5</span>
-        <span class="tag tag-blue">CSS3</span>
-        <span class="tag tag-blue">Tailwind CSS</span>
-        <span class="tag tag-blue">Bootstrap</span>
-      </div>
-    </div>
-    <div class="skill-card reveal">
-      <div class="skill-card-label">Backend</div>
-      <div class="skill-tags">
-        <span class="tag tag-purple">Spring Boot</span>
-        <span class="tag tag-purple">Java</span>
-        <span class="tag tag-purple">REST APIs</span>
-        <span class="tag tag-purple">JWT Auth</span>
-        <span class="tag tag-purple">C</span>
-      </div>
-    </div>
-    <div class="skill-card reveal">
-      <div class="skill-card-label">Database</div>
-      <div class="skill-tags">
-        <span class="tag tag-green">PostgreSQL</span>
-        <span class="tag tag-green">MySQL</span>
-      </div>
-    </div>
-    <div class="skill-card reveal">
-      <div class="skill-card-label">Tools & Deployment</div>
-      <div class="skill-tags">
-        <span class="tag tag-amber">Git</span>
-        <span class="tag tag-amber">GitHub</span>
-        <span class="tag tag-amber">Vercel</span>
-        <span class="tag tag-amber">Render</span>
-        <span class="tag tag-amber">Netlify</span>
-        <span class="tag tag-amber">Docker</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="reveal">
-    <p class="section-label">What I've Built</p>
-    <h2 class="section-title">Projects</h2>
-  </div>
-  <div class="projects-grid">
-
-    <!-- NovaFlow -->
-    <div class="project-card reveal">
-      <span class="featured-badge">★ Featured</span>
-      <div class="project-icon" style="background: rgba(124,58,237,0.15);">⚡</div>
-      <h3>NovaFlow</h3>
-      <p>
-        Full-stack SaaS project management app with JWT authentication, 
-        task management, auto progress calculation, and real-time dashboard. 
-        Deployed on Vercel + Render with cloud PostgreSQL.
-      </p>
-      <div class="project-stack">
-        <span class="tag tag-blue">React</span>
-        <span class="tag tag-blue">TypeScript</span>
-        <span class="tag tag-purple">Spring Boot</span>
-        <span class="tag tag-green">PostgreSQL</span>
-        <span class="tag tag-green">REST APIs</span>
-        <span class="tag tag-amber">Vercel</span>
-      </div>
-      <div class="project-links">
-        <a href="https://novaflow-git-main-krushna-s-projects3.vercel.app" target="_blank" class="project-link link-live">Live Demo ↗</a>
-        <a href="https://github.com/krushnaaglawe01/NovaFlow" target="_blank" class="project-link link-gh">GitHub</a>
-      </div>
-    </div>
-
-     <!-- CodePath -->
-    <div class="project-card reveal">
-      <div class="project-icon" style="background: rgba(16,185,129,0.15);">🎓</div>
-      <h3>CodePath</h3>
-      <p>
-        Full-stack coding education platform with structured courses, in-browser 
-        coding challenges, quiz system, XP leaderboard, certificates, and a full 
-        admin panel. Supports both student and admin roles.
-      </p>
-      <div class="project-stack">
-        <span class="tag tag-blue">Next.js</span>
-        <span class="tag tag-blue">TypeScript</span>
-        <span class="tag tag-green">PostgreSQL</span>
-        <span class="tag tag-green">Prisma</span>
-        <span class="tag tag-blue">Tailwind CSS</span>
-        <span class="tag tag-amber">Vercel</span>
-      <div class="project-links">
-        <a href="https://codepath-lilac.vercel.app" target="_blank" class="project-link link-live">Live Demo ↗</a>
-        <a href="https://github.com/krushnaaglawe01/codepath" target="_blank" class="project-link link-gh">GitHub</a>
-      </div>
-    </div>
-</div>
-
-<!-- Smart Expense Tracker -->
-    <div class="project-card reveal">
-      <div class="project-icon" style="background: rgba(245,158,11,0.15);">💰</div>
-      <h3>Smart Expense Tracker</h3>
-      <p>
-        Responsive expense tracking app with category-wise tracking, donut and line 
-        charts, month-based filtering, dark/light mode, and local storage persistence.
-      </p>
-      <div class="project-stack">
-        <span class="tag tag-blue">HTML5</span>
-        <span class="tag tag-blue">CSS3</span>
-        <span class="tag tag-blue">JavaScript</span>
-        <span class="tag tag-amber">Chart.js</span>
-        <span class="tag tag-amber">Netlify</span>
-      </div>
-      <div class="project-links">
-        <a href="https://smart-expense-tracker-krish.netlify.app" target="_blank" class="project-link link-live">Live Demo ↗</a>
-        <a href="https://github.com/krushnaaglawe01/Smart-Expense-Tracker" target="_blank" class="project-link link-gh">GitHub</a>
-      </div>
-    </div>
-
-    <!-- Portfolio -->
-    <div class="project-card reveal">
-      <div class="project-icon" style="background: rgba(37,99,235,0.15);">🌐</div>
-      <h3>Personal Portfolio</h3>
-      <p>
-        Responsive personal portfolio website with dark theme, smooth animations, 
-        and resume download. Built with plain HTML, CSS, and JavaScript.
-      </p>
-      <div class="project-stack">
-        <span class="tag tag-blue">HTML5</span>
-        <span class="tag tag-blue">CSS3</span>
-        <span class="tag tag-blue">JavaScript</span>
-        <span class="tag tag-amber">Netlify</span>
-      </div>
-      <div class="project-links">
-        <a href="https://krushna-portfolio-site.netlify.app" target="_blank" class="project-link link-live">Live Demo ↗</a>
-        <a href="https://github.com/krushnaaglawe01/Portfolio_Website_Personal" target="_blank" class="project-link link-gh">GitHub</a>
-      </div>
-    </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- INTERNSHIPS & CERTIFICATIONS -->
-<section id="internships">
-  <div class="reveal">
-    <p class="section-label">Experience & Credentials</p>
-    <h2 class="section-title">Internships & Certifications</h2>
-  </div>
-  <div class="internship-grid">
- 
-    <!-- Cognifyz -->
-    <div class="internship-card reveal">
-      <div class="internship-header">
-        <div class="internship-icon" style="background: rgba(37,99,235,0.15); color: #60a5fa;">C</div>
-        <div>
-          <h3 class="internship-title">Front-End Development Intern</h3>
-          <p class="internship-company">Cognifyz Technologies</p>
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-glow"></div>
+      <div style="position: relative; z-index: 1">
+        <!-- Profile Avatar — replace initials with <img> tag once you have a photo -->
+        <div
+          class="hero-avatar"
+          style="background: none; padding: 0; overflow: hidden"
+        >
+          <img
+            src="Profileimg.jpeg"
+            alt="Krushna Aglawe"
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 50%;
+            "
+          />
         </div>
-        <span class="internship-badge">Certified</span>
-      </div>
-      <p class="internship-desc">
-        Worked as a Front-End Development Intern, demonstrating dedication, strong 
-        coordination skills, and attention to detail across real-world projects.
-      </p>
-      <div class="internship-meta">
-        <span class="internship-date">📅 January 2025 – February 2025</span>
-        <span class="internship-type">🌐 Virtual Internship</span>
-      </div>
-      <div class="skill-tags" style="margin-top: 12px;">
-        <span class="tag tag-blue">HTML5</span>
-        <span class="tag tag-blue">CSS3</span>
-        <span class="tag tag-blue">JavaScript</span>
-        <span class="tag tag-blue">Frontend Dev</span>
-      </div>
-    </div>
- 
-    <!-- CodeAlpha -->
-    <div class="internship-card reveal">
-      <div class="internship-header">
-        <div class="internship-icon" style="background: rgba(124,58,237,0.15); color: #a78bfa;">CA</div>
-        <div>
-          <h3 class="internship-title">Frontend Development Intern</h3>
-          <p class="internship-company">CodeAlpha</p>
+
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for opportunities
         </div>
-        <span class="internship-badge">Certified</span>
-      </div>
-      <p class="internship-desc">
-        Active participant in CodeAlpha's Virtual Internship Program in Frontend 
-        Development, recognised for dedication and hard work throughout the program.
-      </p>
-      <div class="internship-meta">
-        <span class="internship-date">📅 February 2025</span>
-        <span class="internship-type">🌐 Virtual Internship</span>
-      </div>
-      <div class="skill-tags" style="margin-top: 12px;">
-        <span class="tag tag-purple">HTML5</span>
-        <span class="tag tag-purple">CSS3</span>
-        <span class="tag tag-purple">JavaScript</span>
-        <span class="tag tag-purple">Frontend Dev</span>
-      </div>
-    </div>
-
-      <!-- Udemy -->
-    <div class="internship-card reveal">
-      <div class="internship-header">
-        <div class="internship-icon" style="background: rgba(167,139,250,0.15); color: #a78bfa;">U</div>
-        <div>
-          <h3 class="internship-title">The Complete Full-Stack Web Development Bootcamp</h3>
-          <p class="internship-company">Udemy — Dr. Angela Yu</p>
+        <h1>Hi, I'm <span>Krushna</span><br />Full Stack Developer</h1>
+        <p class="hero-sub">
+          I build complete web applications — from REST APIs and databases to
+          responsive React frontends — and deploy them to production.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
+            View My Work
+          </a>
+          <a href="#contact" class="btn-outline">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              />
+              <polyline points="22,6 12,12 2,6" />
+            </svg>
+            Get In Touch
+          </a>
         </div>
-        <span class="internship-badge">Certified</span>
       </div>
-      <p class="internship-desc">
-        Completed 61.5 hours of full-stack web development covering frontend, backend, 
-        databases, APIs, and deployment under one of Udemy's top-rated instructors.
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="reveal">
+        <p class="section-label">Who I Am</p>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p>
+            I'm a passionate Full Stack Developer with a strong foundation in
+            both frontend and backend technologies. I specialize in building
+            complete, production-ready web applications from the ground up.
+          </p>
+          <p>
+            On the backend, I design scalable REST APIs using
+            <strong>Spring Boot</strong> and <strong>Java</strong>, with secure
+            <strong>JWT authentication</strong> and database management using
+            <strong>PostgreSQL</strong> and <strong>MySQL</strong>.
+          </p>
+          <p>
+            On the frontend, I craft responsive, user-friendly interfaces using
+            <strong>React.js</strong>, <strong>TypeScript</strong>, and
+            <strong>Tailwind CSS</strong>
+            — and I take projects all the way to live deployment on cloud
+            platforms.
+          </p>
+          <div style="margin-top: 24px">
+            <a
+              href="Krushna_Aglawe_Resume_.pdf"
+              download
+              class="btn-primary"
+              style="display: inline-flex"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Download Resume
+            </a>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-num">2+</div>
+            <div class="stat-label">Full Stack Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">10+</div>
+            <div class="stat-label">REST APIs Built</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">10+</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Self-Taught</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="reveal">
+        <p class="section-label">What I Know</p>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-card-label">Frontend</div>
+          <div class="skill-tags">
+            <span class="tag tag-blue">React.js</span>
+            <span class="tag tag-blue">TypeScript</span>
+            <span class="tag tag-blue">JavaScript (ES6+)</span>
+            <span class="tag tag-blue">HTML5</span>
+            <span class="tag tag-blue">CSS3</span>
+            <span class="tag tag-blue">Tailwind CSS</span>
+            <span class="tag tag-blue">Next.js</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-label">Backend</div>
+          <div class="skill-tags">
+            <span class="tag tag-purple">Spring Boot</span>
+            <span class="tag tag-purple">Java</span>
+            <span class="tag tag-purple">REST APIs</span>
+            <span class="tag tag-purple">JWT Auth</span>
+            <span class="tag tag-purple">Spring Security</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-label">Database</div>
+          <div class="skill-tags">
+            <span class="tag tag-green">PostgreSQL</span>
+            <span class="tag tag-green">MySQL</span>
+            <span class="tag tag-green">Prisma ORM</span>
+            <span class="tag tag-green">Spring Data JDBC</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-label">Tools & Deployment</div>
+          <div class="skill-tags">
+            <span class="tag tag-amber">Git</span>
+            <span class="tag tag-amber">GitHub</span>
+            <span class="tag tag-amber">Docker</span>
+            <span class="tag tag-amber">Vercel</span>
+            <span class="tag tag-amber">Render</span>
+            <span class="tag tag-amber">Netlify</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- PROJECTS — only 2 strong ones -->
+    <section id="projects">
+      <div class="reveal">
+        <p class="section-label">What I've Built</p>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+        <!-- NovaFlow — Featured (full width) -->
+        <div class="project-card featured reveal">
+          <div class="project-left">
+            <span class="featured-badge">★ Featured</span>
+            <div
+              class="project-icon"
+              style="background: rgba(124, 58, 237, 0.15)"
+            >
+              ⚡
+            </div>
+            <h3>NovaFlow</h3>
+            <p>
+              AI-powered full-stack SaaS project management platform for
+              freelancers. Features JWT authentication, task management with
+              auto progress calculation, real-time analytics dashboard with
+              charts, and role-based access. Fully deployed with Docker on
+              Vercel + Render + cloud PostgreSQL.
+            </p>
+            <div class="project-stack">
+              <span class="tag tag-blue">React</span>
+              <span class="tag tag-blue">TypeScript</span>
+              <span class="tag tag-purple">Spring Boot</span>
+              <span class="tag tag-purple">Spring Security</span>
+              <span class="tag tag-green">PostgreSQL</span>
+              <span class="tag tag-amber">Docker</span>
+              <span class="tag tag-amber">Vercel</span>
+              <span class="tag tag-amber">Render</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://novaflow-git-main-krushna-s-projects3.vercel.app"
+                target="_blank"
+                class="project-link link-live"
+                >Live Demo ↗</a
+              >
+              <a
+                href="https://github.com/krushnaaglawe01/NovaFlow"
+                target="_blank"
+                class="project-link link-gh"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div class="project-preview">
+            <div class="preview-label">Project Highlights</div>
+            <div class="preview-stat">
+              <span>Architecture</span>
+              <span class="val">Full-Stack SaaS</span>
+            </div>
+            <div class="preview-stat">
+              <span>Auth</span>
+              <span class="val">JWT + Spring Security</span>
+            </div>
+            <div class="preview-stat">
+              <span>Database</span>
+              <span class="val">PostgreSQL (Cloud)</span>
+            </div>
+            <div class="preview-stat">
+              <span>Deployment</span>
+              <span class="val">Docker + Vercel + Render</span>
+            </div>
+            <div class="preview-stat">
+              <span>API Endpoints</span>
+              <span class="val">12+ REST APIs</span>
+            </div>
+            <div class="preview-stat">
+              <span>Status</span>
+              <span class="val">✅ Live</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CodePath — Featured full width -->
+        <div class="project-card featured reveal">
+          <div class="project-left">
+            <span class="featured-badge">★ Featured</span>
+            <div
+              class="project-icon"
+              style="background: rgba(16, 185, 129, 0.15)"
+            >
+              🎓
+            </div>
+            <h3>CodePath</h3>
+            <p>
+              Full-stack coding education platform with structured courses,
+              in-browser coding challenges, quiz system, XP & streak tracking,
+              leaderboard, printable certificates, and a complete admin panel
+              for managing users, courses, and enrollments. Supports Student and
+              Admin roles.
+            </p>
+            <div class="project-stack">
+              <span class="tag tag-blue">Next.js</span>
+              <span class="tag tag-blue">TypeScript</span>
+              <span class="tag tag-green">PostgreSQL</span>
+              <span class="tag tag-green">Prisma ORM</span>
+              <span class="tag tag-purple">NextAuth.js</span>
+              <span class="tag tag-blue">Tailwind CSS</span>
+              <span class="tag tag-amber">Vercel</span>
+              <span class="tag tag-amber">Neon</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://codepath-lilac.vercel.app"
+                target="_blank"
+                class="project-link link-live"
+                >Live Demo ↗</a
+              >
+              <a
+                href="https://github.com/krushnaaglawe01/codepath"
+                target="_blank"
+                class="project-link link-gh"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div class="project-preview">
+            <div class="preview-label">Project Highlights</div>
+            <div class="preview-stat">
+              <span>Architecture</span>
+              <span class="val">Full-Stack Platform</span>
+            </div>
+            <div class="preview-stat">
+              <span>Auth</span>
+              <span class="val">NextAuth.js + Sessions</span>
+            </div>
+            <div class="preview-stat">
+              <span>Database</span>
+              <span class="val">PostgreSQL + Prisma ORM</span>
+            </div>
+            <div class="preview-stat">
+              <span>Roles</span>
+              <span class="val">Student / Admin</span>
+            </div>
+            <div class="preview-stat">
+              <span>Features</span>
+              <span class="val">XP, Leaderboard, Certs</span>
+            </div>
+            <div class="preview-stat">
+              <span>Status</span>
+              <span class="val">✅ Live</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- INTERNSHIPS & CERTIFICATIONS -->
+    <section id="internships">
+      <div class="reveal">
+        <p class="section-label">Experience & Credentials</p>
+        <h2 class="section-title">Internships & Certifications</h2>
+      </div>
+      <div class="internship-grid">
+        <!-- Cognifyz -->
+        <div class="internship-card reveal">
+          <div class="internship-header">
+            <div
+              class="internship-icon"
+              style="background: rgba(37, 99, 235, 0.15); color: #60a5fa"
+            >
+              C
+            </div>
+            <div>
+              <h3 class="internship-title">Front-End Development Intern</h3>
+              <p class="internship-company">Cognifyz Technologies</p>
+            </div>
+            <span class="internship-badge">Certified</span>
+          </div>
+          <p class="internship-desc">
+            Worked as a Front-End Development Intern, demonstrating dedication,
+            strong coordination skills, and attention to detail across
+            real-world projects.
+          </p>
+          <div class="internship-meta">
+            <span class="internship-date">📅 January 2025 – February 2025</span>
+            <span class="internship-type">🌐 Virtual Internship</span>
+          </div>
+          <div class="skill-tags" style="margin-top: 12px">
+            <span class="tag tag-blue">HTML5</span>
+            <span class="tag tag-blue">CSS3</span>
+            <span class="tag tag-blue">JavaScript</span>
+            <span class="tag tag-blue">Frontend Dev</span>
+          </div>
+        </div>
+
+        <!-- CodeAlpha -->
+        <div class="internship-card reveal">
+          <div class="internship-header">
+            <div
+              class="internship-icon"
+              style="background: rgba(124, 58, 237, 0.15); color: #a78bfa"
+            >
+              CA
+            </div>
+            <div>
+              <h3 class="internship-title">Frontend Development Intern</h3>
+              <p class="internship-company">CodeAlpha</p>
+            </div>
+            <span class="internship-badge">Certified</span>
+          </div>
+          <p class="internship-desc">
+            Active participant in CodeAlpha's Virtual Internship Program in
+            Frontend Development, recognised for dedication and hard work
+            throughout the program.
+          </p>
+          <div class="internship-meta">
+            <span class="internship-date">📅 February 2025</span>
+            <span class="internship-type">🌐 Virtual Internship</span>
+          </div>
+          <div class="skill-tags" style="margin-top: 12px">
+            <span class="tag tag-purple">HTML5</span>
+            <span class="tag tag-purple">CSS3</span>
+            <span class="tag tag-purple">JavaScript</span>
+            <span class="tag tag-purple">Frontend Dev</span>
+          </div>
+        </div>
+
+        <!-- Udemy -->
+        <div class="internship-card reveal">
+          <div class="internship-header">
+            <div
+              class="internship-icon"
+              style="background: rgba(167, 139, 250, 0.15); color: #a78bfa"
+            >
+              U
+            </div>
+            <div>
+              <h3 class="internship-title">
+                The Complete Full-Stack Web Development Bootcamp
+              </h3>
+              <p class="internship-company">Udemy — Dr. Angela Yu</p>
+            </div>
+            <span class="internship-badge">Certified</span>
+          </div>
+          <p class="internship-desc">
+            Completed 61.5 hours of full-stack web development covering
+            frontend, backend, databases, APIs, and deployment under one of
+            Udemy's top-rated instructors.
+          </p>
+          <div class="internship-meta">
+            <span class="internship-date">📅 September 16, 2025</span>
+            <span class="internship-type">⏱ 61.5 Hours</span>
+          </div>
+          <div class="skill-tags" style="margin-top: 12px">
+            <span class="tag tag-purple">Full Stack</span>
+            <span class="tag tag-blue">HTML5</span>
+            <span class="tag tag-blue">CSS3</span>
+            <span class="tag tag-blue">JavaScript</span>
+            <span class="tag tag-green">Node.js</span>
+          </div>
+          <div style="margin-top: 12px">
+            <a
+              href="https://ude.my/UC-ce11cad0-10a7-4263-b6ba-74c8bb653853"
+              target="_blank"
+              class="project-link link-live"
+              style="font-size: 12px; padding: 6px 14px"
+              >View Certificate ↗</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-box reveal">
+        <h2>Let's Work Together</h2>
+        <p>
+          I'm actively looking for entry-level full stack or Java developer
+          roles. If you have an opportunity or just want to connect, reach out!
+        </p>
+        <div class="contact-links">
+          <a href="mailto:krushnaaglawe01@gmail.com" class="btn-primary">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              />
+              <polyline points="22,6 12,12 2,6" />
+            </svg>
+            Email Me
+          </a>
+          <a
+            href="https://github.com/krushnaaglawe01"
+            target="_blank"
+            class="btn-outline"
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              />
+            </svg>
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/krushna-aglawe05/"
+            target="_blank"
+            class="btn-outline"
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        Designed & Built by <strong>Krushna Aglawe</strong> · Full Stack
+        Developer · 2026
       </p>
-      <div class="internship-meta">
-        <span class="internship-date">📅 September 16, 2025</span>
-        <span class="internship-type">⏱ 61.5 Hours</span>
-      </div>
-      <div class="skill-tags" style="margin-top: 12px;">
-        <span class="tag tag-purple">Full Stack</span>
-        <span class="tag tag-blue">HTML5</span>
-        <span class="tag tag-blue">CSS3</span>
-        <span class="tag tag-blue">JavaScript</span>
-        <span class="tag tag-green">Node.js</span>
-      </div>
-      <div style="margin-top: 12px;">
-        <a href="https://ude.my/UC-ce11cad0-10a7-4263-b6ba-74c8bb653853" target="_blank" class="project-link link-live" style="font-size: 12px; padding: 6px 14px;">View Certificate ↗</a>
-      </div>
-    </div>
-  </div>
-</section>
+    </footer>
 
-<div class="divider"></div>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="contact-box reveal">
-    <h2>Let's Work Together</h2>
-    <p>
-      I'm actively looking for entry-level full stack or Java developer roles. 
-      If you have an opportunity or just want to connect, reach out!
-    </p>
-    <div class="contact-links">
-      <a href="mailto:krushnaaglawe01@gmail.com" class="btn-primary">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
-        Email Me
-      </a>
-      <a href="https://github.com/krushnaaglawe01" target="_blank" class="btn-outline">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-        GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/krushna-aglawe05/" target="_blank" class="btn-outline">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-        LinkedIn
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <p>Designed & Built by <strong>Krushna Aglawe</strong> · Full Stack Developer · 2026</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
